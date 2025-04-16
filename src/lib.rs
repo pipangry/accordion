@@ -35,7 +35,7 @@
 //! - Automatic `help` command
 //! - Easy parsing for one or multiple commands
 //! - Error prettifying
-//! 
+//!
 //! ### Example of prettified error message
 //! ```plaintext
 //! error[cargo]: 'Missing arguments: ["type", "args"]' – returned by command 'cargo'

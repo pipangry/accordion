@@ -175,6 +175,9 @@ where
 }
 
 #[macro_export]
+/// Temporary command for tests
+/// 
+/// Panics on callback
 macro_rules! temp_command {
     () => {{
         Command::new("temp", |_: Vec<Value>| panic!("Temporary command was called"))
