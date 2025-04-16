@@ -1,6 +1,8 @@
 [package]
 name = "accordion"
+description = "Simple library for Command Line Interface parsing with no magic behind the schenes"
 version = "0.1.0"
 edition = "2024"
+license = "MIT"
 
 [dependencies]
