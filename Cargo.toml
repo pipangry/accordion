@@ -2,7 +2,7 @@
 name = "accordion"
 description = "Simple library for Command Line Interface parsing with no magic behind the schenes"
 repository = "https://github.com/pipangry/accordion"
-version = "0.1.0"
+version = "0.1.1"
 edition = "2024"
 license = "MIT"
 
