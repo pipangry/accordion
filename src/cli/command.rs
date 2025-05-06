@@ -388,7 +388,7 @@ where
     ///     "--merge".to_owned(),
     ///     "my_branch".to_owned(),
     ///     "master".to_owned(),
-    ///     "some_type".to_owned()
+    ///     "some_type".to_owned(),
     /// ]).unwrap();
     /// // Ok:
     /// // [
@@ -471,13 +471,15 @@ where
                 }
                 // Statically positioned arg
                 _ => {
+                    if static_positioned_index >= ncmi_map.len() {
+                        return Err(Error::UnknownArgument(arg))
+                    }
+                    
                     // Using NCMI map to match the closest static arg
                     if let Some(arg_index) = ncmi_map[static_positioned_index] {
                         // To be honest, we shift all the hard work to the NCMI algorithm
                         parsed[arg_index] = Value::Some(Box::from([ConsumedValue::Arg(arg)]));
                         static_positioned_index += 1;
-                    } else {
-                        return Err(Error::UnknownArgument(arg));
                     }
                 }
             }

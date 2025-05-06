@@ -38,7 +38,7 @@ impl ConsumedValue {
     }
 }
 
-/// Default `ValueConsumer` for flags
+/// Default `ValueConsumer` for flags.
 /// To create `SelfPoint` flag, leave array empty
 #[derive(Debug, PartialEq)]
 pub struct GenericConsumer<'a>(pub &'a [&'a str]);

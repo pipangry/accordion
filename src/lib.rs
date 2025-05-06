@@ -1,4 +1,4 @@
-#![doc = r#"Simple library for Command Line Interface parsing with no magic behind the schenes"#]
+#![doc = r#"Simple library for Command Line Interface parsing with no magic behind the scenes"#]
 //! # Example
 //! Creating **CommandStream** – assembled parser for multiple commands
 //! ```

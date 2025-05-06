@@ -45,8 +45,7 @@ pub fn ncmi_map<T>(
     unsafe {
         fast_vec_fill_with(&mut used_bitset, || 0u64, capacity);
     }
-
-    // Пакетная обработка для лучшего предсказания ветвлений
+    
     let mut target = 0;
     while target < range_end {
         // Find first index >= target
